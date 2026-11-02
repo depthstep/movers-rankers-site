@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — Movers Rankers</title>
+  <meta name="description" content="Placeholder: get in touch with Movers Rankers.">
+  <link rel="icon" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="resources">
+  <div data-header></div>
+
+  <main>
+    <section class="banner">
+      <div class="container">
+        <h1 class="h1 grad-text">Contact Us</h1>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>Contact Us</span></nav>
+      </div>
+    </section>
+
+    <section class="section section--panel">
+      <div class="container split" style="align-items:start">
+        <div class="stack reveal">
+          <span class="eyebrow">Reach out to us</span>
+          <h2 class="h2 grad-text">Get in Touch</h2>
+          <p class="lead">Placeholder copy — reach out for tailored digital solutions that drive results for your moving business.</p>
+          <div class="grid-2" style="width:100%">
+            <div class="card info-card"><span class="icon-badge"><svg class="ic"><use href="#i-phone"/></svg></span><small>Phone Number</small><h5>+1 (000) 123 4567</h5></div>
+            <div class="card info-card"><span class="icon-badge"><svg class="ic"><use href="#i-mail"/></svg></span><small>Email Address</small><h5>hello@example.com</h5></div>
+            <div class="card info-card" style="grid-column:1/-1"><span class="icon-badge"><svg class="ic"><use href="#i-pin"/></svg></span><small>Office Address</small><h5>123 Placeholder Street, New York, NY 10001, USA</h5></div>
+          </div>
+          <div class="card info-card" id="review-link" style="width:100%">
+            <span class="icon-badge"><svg class="ic"><use href="#i-star"/></svg></span>
+            <small>Google Review Link</small>
+            <h5>Happy with your move? Placeholder copy inviting customers to leave a review.</h5>
+            <a class="link-arrow" href="#">Leave a review <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <form class="form reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Thanks — we\'ll be in touch!'; this.reset();">
+          <h3 class="h3">Send us a message</h3>
+          <div class="form-row">
+            <div class="field"><label for="f-name">Full name</label><input id="f-name" required placeholder="John Doe"></div>
+            <div class="field"><label for="f-company">Company</label><input id="f-company" placeholder="Lorem Moving Co."></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" required placeholder="you@example.com"></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" type="tel" placeholder="+1 (000) 000 0000"></div>
+          </div>
+          <div class="field">
+            <label for="f-service">Interested in</label>
+            <select id="f-service">
+              <option>AI Review Management</option>
+              <option>AI Voice Assistant</option>
+              <option>AI Search Optimization</option>
+              <option>Website Design & Development</option>
+              <option>AI Local Service Ads</option>
+              <option>AI Dispatch</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" placeholder="Tell us about your moving business and goals…"></textarea></div>
+          <button class="btn btn--primary" type="submit" style="justify-self:start;border:0">Send Message <span class="btn-arrow"><svg class="ic"><use href="#i-arrow-ur"/></svg></span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="map" aria-label="Map placeholder">
+      <div class="map-pin"><span class="icon-badge" style="width:44px;height:44px"><svg class="ic"><use href="#i-pin"/></svg></span><span><b>Movers Rankers HQ</b><br><small class="muted">Map embed placeholder</small></span></div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+</body>
+</html>

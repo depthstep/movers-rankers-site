@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — Movers Rankers</title>
+  <meta name="description" content="Placeholder: all services for moving companies.">
+  <link rel="icon" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="services">
+  <div data-header></div>
+
+  <main>
+    <section class="banner">
+      <div class="container">
+        <span class="eyebrow">Your next stage of growth</span>
+        <h1 class="h1 grad-text">Get seen. Get trusted. Get booked.</h1>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>Services</span></nav>
+      </div>
+    </section>
+
+    <section class="section section--glow">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Our Offerings</span>
+          <h2 class="h2 grad-text">Services Built for Moving Companies</h2>
+          <p class="lead">Placeholder copy — each service connects one stage of the customer journey: search, inquiry, estimate and booked move.</p>
+        </div>
+        <div class="grid-3" id="service-cards"></div>
+        <div class="note-pill"><p>Need a custom growth plan? <a href="contact.html">Let's talk strategy.</a></p></div>
+      </div>
+    </section>
+
+    <div data-partial="process"></div>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div class="stack">
+            <h2 class="h2">Find your growth gaps</h2>
+            <p class="lead">Placeholder copy — book a free strategy call and we'll show you where your next bookings are coming from.</p>
+            <a class="btn btn--primary" href="contact.html">Book a Free Call <span class="btn-arrow"><svg class="ic"><use href="#i-arrow-ur"/></svg></span></a>
+          </div>
+          <div class="media"><img src="https://picsum.photos/seed/mr-cta-services/400/400" alt="" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script>
+    document.addEventListener("mr:ready", () => {
+      const { SERVICES, ic } = window.MR;
+      document.getElementById("service-cards").innerHTML = SERVICES.map((s, i) => `
+        <a class="card service-card reveal" href="service-detail.html?s=${s.slug}">
+          <span class="step-top" style="display:flex;justify-content:space-between;align-items:center"><span class="icon-badge">${ic(s.icon)}</span><span class="step-num">${String(i + 1).padStart(2, "0")}</span></span>
+          <h4 class="h3">${s.name}</h4>
+          <p>${s.long}</p>
+          <span class="card-foot"><span class="link-arrow">View Details</span><span class="circle-link">${ic("arrow-ur")}</span></span>
+        </a>`).join("");
+    });
+  </script>
+</body>
+</html>

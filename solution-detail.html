@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solution — Movers Rankers</title>
+  <meta name="description" content="Placeholder: solution detail page template.">
+  <link rel="icon" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="solutions">
+  <div data-header></div>
+
+  <main>
+    <section class="banner">
+      <div class="container">
+        <h1 class="h1 grad-text" data-sol-name>Missed Call Recovery</h1>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><a href="solutions.html">Solutions</a><span data-sol-name>Missed Call Recovery</span></nav>
+      </div>
+    </section>
+
+    <section class="section section--panel">
+      <div class="container split">
+        <div class="stack reveal">
+          <span class="eyebrow" data-sol-short>Placeholder</span>
+          <h2 class="h2 grad-text">Placeholder headline for this solution</h2>
+          <p class="lead">Placeholder copy — explain the problem this solution solves for moving companies and the outcome customers can expect.</p>
+          <ul class="check-list">
+            <li>Placeholder feature one</li>
+            <li>Placeholder feature two</li>
+            <li>Placeholder feature three</li>
+            <li>Placeholder feature four</li>
+          </ul>
+          <a class="btn btn--primary" href="contact.html">Let's plan your setup <span class="btn-arrow"><svg class="ic"><use href="#i-arrow-ur"/></svg></span></a>
+        </div>
+        <div class="media reveal" style="aspect-ratio:1"><img data-sol-img src="https://picsum.photos/seed/mr-sol/800/800" alt="Placeholder solution image"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">How it helps</span>
+          <h2 class="h2 grad-text">Built for busy moving teams</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card iconbox reveal"><span class="icon-badge"><svg class="ic"><use href="#i-bolt"/></svg></span><div><h5>Placeholder Benefit</h5><p>Short placeholder description of this benefit.</p></div></div>
+          <div class="card iconbox reveal"><span class="icon-badge"><svg class="ic"><use href="#i-clock"/></svg></span><div><h5>Placeholder Benefit</h5><p>Short placeholder description of this benefit.</p></div></div>
+          <div class="card iconbox reveal"><span class="icon-badge"><svg class="ic"><use href="#i-chart"/></svg></span><div><h5>Placeholder Benefit</h5><p>Short placeholder description of this benefit.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div data-partial="process"></div>
+  </main>
+
+  <div data-footer></div>
+
+  <script>
+    document.addEventListener("mr:ready", () => {
+      const { SOLUTIONS } = window.MR;
+      const slug = new URLSearchParams(location.search).get("s");
+      const s = SOLUTIONS.find((x) => x.slug === slug) || SOLUTIONS[0];
+      document.title = `${s.name} — Movers Rankers`;
+      document.querySelectorAll("[data-sol-name]").forEach((el) => (el.textContent = s.name));
+      document.querySelector("[data-sol-short]").textContent = s.short;
+      document.querySelector("[data-sol-img]").src = `https://picsum.photos/seed/mr-sol-${s.slug}/800/800`;
+    });
+  </script>
+</body>
+</html>

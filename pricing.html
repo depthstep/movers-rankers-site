@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — Movers Rankers</title>
+  <meta name="description" content="Placeholder: pricing plans for moving companies.">
+  <link rel="icon" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="pricing">
+  <div data-header></div>
+
+  <main>
+    <section class="banner">
+      <div class="container">
+        <span class="eyebrow">Made for moving businesses</span>
+        <h1 class="h1 grad-text" style="max-width:950px">Your next stage of growth. A plan to move you forward.</h1>
+        <p class="lead" style="max-width:640px">Placeholder copy — from AI search visibility to better websites and stronger customer trust. Choose the support your moving business needs next.</p>
+        <div class="hero-meta"><span>Plans for every growth stage</span><span>Built for moving companies</span><span>Custom options available</span></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:60px">
+      <div class="container">
+        <nav class="price-tabs" aria-label="Pricing sections">
+          <a class="price-tab" href="#p-search" aria-current="true"><small>01</small> AI Optimization</a>
+          <a class="price-tab" href="#p-web"><small>02</small> UI/UX Website Design</a>
+          <a class="price-tab" href="#p-ads"><small>03</small> AI Local Service Ads</a>
+          <a class="price-tab" href="#p-reviews"><small>04</small> AI Review Management</a>
+        </nav>
+        <div id="price-panels"></div>
+      </div>
+    </section>
+
+    <section class="section section--panel">
+      <div class="container faq-layout">
+        <div class="section-head reveal">
+          <span class="eyebrow">Before your next move</span>
+          <h2 class="h2 grad-text">Got questions? We've got answers.</h2>
+          <p class="lead">Placeholder copy — a few things to know when choosing the right support for your moving business.</p>
+        </div>
+        <div class="faq reveal">
+          <details open><summary>Which plan is right for my moving company?</summary><p>Placeholder answer — start with your main priority: search visibility, a better website, paid inquiries or reviews. We'll help you choose.</p></details>
+          <details><summary>Can I combine services into one plan?</summary><p>Placeholder answer — yes. Request a custom proposal combining services around your priorities and budget.</p></details>
+          <details><summary>Is advertising spend included?</summary><p>Placeholder answer — no. Ads pricing covers management; your ad budget is separate and agreed before launch.</p></details>
+          <details><summary>Do these plans guarantee booked moving jobs?</summary><p>Placeholder answer — no specific lead count is guaranteed; demand, competition and follow-up all affect results.</p></details>
+          <details><summary>What is included in monthly website pricing?</summary><p>Placeholder answer — each plan includes the listed services; your proposal confirms the final scope.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script>
+    document.addEventListener("mr:ready", () => {
+      const { ic } = window.MR;
+      // [id, title, tagline, icon, plans[[name, tag, desc, price, cta, items]], disclaimer]
+      const groups = [
+        ["p-search", "AI Optimization", "search", [
+          ["Starter", "Search foundations", "For local movers building their search foundation.", 499, "Build Your Visibility", ["AI Search Visibility Audit", "ChatGPT Optimization", "Google AI Overviews Optimization", "Gemini Optimization", "Voice Search Optimization", "Service Area Optimization", "Local Listing Management", "Review Monitoring", "Monthly Performance Reports"]],
+          ["Premium", "Wider AI coverage", "For growing movers competing in more service areas.", 999, "Grow Your Visibility", ["Everything in Starter", "Claude Optimization", "Microsoft Copilot Optimization", "AI Citation & Mention Tracking", "AI Brand Visibility Monitoring", "Competitor Analysis", "Knowledge Graph Optimization", "Digital PR Outreach"]],
+          ["Enterprise", "Built around your markets", "For established movers expanding across markets.", null, "Request a Quote", ["Everything in Premium", "Share of Voice Tracking", "Entity Relationship Mapping", "Multi-Market Visibility Strategy", "Location-Specific Content Planning", "Custom Performance Reporting"]]
+        ], "Placeholder disclaimer — search visibility and lead volume depend on competition, location and your website."],
+        ["p-web", "UI/UX Website Design", "monitor", [
+          ["Starter", "Your digital foundation", "For new moving businesses building their online foundation.", 499, "Start Your Website", ["Up to 5 Pages", "First-Month Support: 10 Hours", "3 Banner Updates", "Up to 20 Stock Images", "Mobile-Responsive Design", "Content Management System", "Google Analytics Integration", "Custom 404 Page"]],
+          ["Premium", "Room for your next stage", "For growing movers showcasing more services and locations.", 749, "Upgrade Your Website", ["5–10 Pages", "First-Month Support: 20 Hours", "5 Banner Updates", "Up to 30 Stock Images", "Mobile-Responsive Design", "Content Management System", "Website Search Functionality", "Initial GEO Optimization"]],
+          ["Enterprise", "More pages. More possibilities.", "For established movers needing a larger online presence.", 999, "Discuss Your Website", ["10+ Pages", "First-Month Support: 40 Hours", "10 Banner Updates", "50+ Stock Images", "Premium Fonts & Typography", "Website Security Features", "Ongoing Website Support", "Initial GEO Optimization"]]
+        ], "Placeholder disclaimer — page count, support allowance and subscription terms are confirmed in your proposal."],
+        ["p-ads", "AI Local Service Ads", "megaphone", [
+          ["Starter", "Start generating inquiries", "For local movers launching their first campaigns.", 250, "Launch Your Campaign", ["Campaign Setup & Management", "Service & Area Targeting", "Budget Monitoring", "Lead & Call Tracking Setup", "Business Profile Review", "24/7 Campaign Dashboard", "Monthly Performance Report"]],
+          ["Premium", "Optimize your next move", "For active moving companies growing their lead volume.", 500, "Grow Your Campaigns", ["Everything in Starter", "Expanded Area Targeting", "Ongoing Campaign Optimization", "Lead Quality Analysis", "Budget Allocation Adjustments", "Call Performance Review"]],
+          ["Enterprise", "Coordinate multiple markets", "For movers managing campaigns across multiple locations.", 750, "Plan Your Expansion", ["Everything in Premium", "Multi-Location Management", "Market-Level Analysis", "Budget Planning Across Areas", "Location-Level Lead Tracking", "Custom Reporting"]]
+        ], "Placeholder disclaimer — monthly prices cover management. Advertising spend is separate."],
+        ["p-reviews", "AI Review Management", "star", [
+          ["Starter", "Create a consistent review habit", "For moving teams building their reputation in one location.", 249, "Build Your Reputation", ["Review Management, One Location", "AI Review Request System", "SMS, Email & Call Invitations", "Follow-Up Reminders", "AI-Assisted Review Responses", "Reputation Monitoring", "Monthly Reporting"]],
+          ["Premium", "Turn feedback into progress", "For movers making reputation part of their growth strategy.", 850, "Strengthen Your Reputation", ["Everything in Starter", "Competitor Reputation Tracking", "Feedback Recovery Workflows", "Missed Call Text-Back", "Customer Feedback Surveys", "Review Showcase Widgets", "Dedicated Account Manager"]]
+        ], "Placeholder disclaimer — review invitations request honest feedback; platforms decide on ratings and removals."]
+      ];
+
+      document.getElementById("price-panels").innerHTML = groups.map(([id, title, icon, plans, note]) => `
+        <section class="price-panel" id="${id}">
+          <div class="section-head section-head--center reveal" style="margin-bottom:44px">
+            <h2 class="h2 grad-text">${title}</h2>
+          </div>
+          <div class="${plans.length === 2 ? "grid-2" : "grid-3"}">
+            ${plans.map(([name, tag, desc, price, cta, items], i) => {
+              const featured = i === 1;
+              return `
+              <div class="card price-card reveal${featured ? " is-featured" : ""}">
+                ${featured ? '<span class="ribbon">RECOMMENDED PLAN</span>' : ""}
+                <div class="plan-top"><span class="icon-badge">${ic(icon)}</span><small>${tag}</small></div>
+                <h3 class="plan-name">${name}</h3>
+                <p class="plan-desc">${desc}</p>
+                ${price
+                  ? `<div class="price"><sup>$</sup><strong>${price}</strong><span>/month</span></div><p class="price-meta">Monthly service plan · USD</p>`
+                  : `<div class="price"><strong style="font-size:36px">Let's talk</strong></div><p class="price-meta">A plan tailored to your business</p>`}
+                <a class="btn ${featured ? "btn--primary" : "btn--ghost"}" href="contact.html">${cta} <span class="btn-arrow">${ic("arrow-ur")}</span></a>
+                <div class="included"><span>WHAT'S INCLUDED</span><ul class="check-list">${items.map((x) => `<li>${x}</li>`).join("")}</ul></div>
+              </div>`;
+            }).join("")}
+          </div>
+          <p class="disclaimer">${note}</p>
+        </section>`).join("");
+    });
+  </script>
+</body>
+</html>

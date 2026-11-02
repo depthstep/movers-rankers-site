@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog & Insights — Movers Rankers</title>
+  <meta name="description" content="Placeholder: blog and insights for moving businesses.">
+  <link rel="icon" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="resources">
+  <div data-header></div>
+
+  <main>
+    <section class="banner">
+      <div class="container">
+        <h1 class="h1 grad-text">Blog & Insights</h1>
+        <p class="lead">Practical ideas for your next stage of growth.</p>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>Blog</span></nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3" id="posts"></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script>
+    document.addEventListener("mr:ready", () => {
+      const { ic } = window.MR;
+      const cats = ["SEO", "Local Ads", "AI Tools", "Websites", "Reviews", "Operations"];
+      document.getElementById("posts").innerHTML = Array.from({ length: 9 }, (_, i) => `
+        <article class="card post-card reveal">
+          <a class="media" href="#"><img src="https://picsum.photos/seed/mr-post-${i}/800/500" alt="" loading="lazy"></a>
+          <div class="post-body">
+            <div class="post-meta"><span>${cats[i % cats.length]}</span><span>${5 + i} min read</span></div>
+            <h4><a href="#">Placeholder article title number ${i + 1} about growing a moving business</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placeholder excerpt for this blog post.</p>
+            <a class="link-arrow" href="#">Read Article ${ic("arrow")}</a>
+          </div>
+        </article>`).join("");
+    });
+  </script>
+</body>
+</html>
