@@ -1,16 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296 92" role="img" aria-label="Movers Rankers">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#e58bff"/>
-      <stop offset="1" stop-color="#a918d0"/>
-    </linearGradient>
-  </defs>
-  <!-- Placeholder mark: truck + rising bars -->
-  <rect x="2" y="14" width="64" height="64" rx="16" fill="url(#g)"/>
-  <path d="M14 56V36h22v20M36 42h8l8 8v6H36" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="22" cy="58" r="4.5" fill="#fff"/>
-  <circle cx="46" cy="58" r="4.5" fill="#fff"/>
-  <path d="M18 30l8-6 6 4 10-8" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="80" y="46" fill="#ffffff" font-family="Plus Jakarta Sans, Onest, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="-0.5">MOVERS</text>
-  <text x="80" y="76" fill="#d77ff2" font-family="Plus Jakarta Sans, Onest, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="5">RANKERS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70" role="img" aria-label="Movers Rankers">
+  <!-- Placeholder mark: location pin with a rising arrow -->
+  <path d="M30 66s-24-18-24-38a24 24 0 0 1 48 0c0 20-24 38-24 38z" fill="#f25c1f"/>
+  <path d="M19 35l8-8 6 5 9-10M35 22h7v7" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="66" y="34" fill="#0f1a2e" font-family="Space Grotesk, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="-0.5">Movers</text>
+  <text x="66" y="60" fill="#0f1a2e" font-family="Space Grotesk, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="-0.5">Rankers<tspan fill="#f25c1f">.</tspan></text>
 </svg>

@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pricing — Movers Rankers</title>
-  <meta name="description" content="Placeholder: pricing plans for moving companies.">
+  <meta name="description" content="Simple monthly plans for moving companies.">
   <link rel="icon" href="assets/img/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
 </head>
@@ -16,40 +16,40 @@
   <div data-header></div>
 
   <main>
-    <section class="banner">
+    <section class="banner banner--center section--grid">
       <div class="container">
-        <span class="eyebrow">Made for moving businesses</span>
-        <h1 class="h1 grad-text" style="max-width:950px">Your next stage of growth. A plan to move you forward.</h1>
-        <p class="lead" style="max-width:640px">Placeholder copy — from AI search visibility to better websites and stronger customer trust. Choose the support your moving business needs next.</p>
-        <div class="hero-meta"><span>Plans for every growth stage</span><span>Built for moving companies</span><span>Custom options available</span></div>
+        <span class="eyebrow">Pricing</span>
+        <h1 class="h1" style="max-width:900px">Simple plans. <span class="hl">No long contracts.</span></h1>
+        <p class="lead">Choose the area you want to grow first, or combine services into a custom plan. Every plan is month to month.</p>
+        <div class="hero-meta"><span>Cancel anytime</span><span>Free onboarding</span><span>Custom bundles available</span></div>
+        <span class="sample-note">All prices are placeholders</span>
       </div>
     </section>
 
-    <section class="section" style="padding-top:60px">
+    <section class="section" style="padding-top:56px">
       <div class="container">
         <nav class="price-tabs" aria-label="Pricing sections">
-          <a class="price-tab" href="#p-search" aria-current="true"><small>01</small> AI Optimization</a>
-          <a class="price-tab" href="#p-web"><small>02</small> UI/UX Website Design</a>
-          <a class="price-tab" href="#p-ads"><small>03</small> AI Local Service Ads</a>
-          <a class="price-tab" href="#p-reviews"><small>04</small> AI Review Management</a>
+          <a class="price-tab" href="#p-search" aria-current="true">Search Visibility</a>
+          <a class="price-tab" href="#p-web">Websites</a>
+          <a class="price-tab" href="#p-ads">Local Ads</a>
+          <a class="price-tab" href="#p-reviews">Reviews</a>
         </nav>
         <div id="price-panels"></div>
       </div>
     </section>
 
-    <section class="section section--panel">
+    <section class="section section--alt">
       <div class="container faq-layout">
         <div class="section-head reveal">
-          <span class="eyebrow">Before your next move</span>
-          <h2 class="h2 grad-text">Got questions? We've got answers.</h2>
-          <p class="lead">Placeholder copy — a few things to know when choosing the right support for your moving business.</p>
+          <span class="eyebrow">Pricing questions</span>
+          <h2 class="h2">The fine print, in plain English</h2>
         </div>
         <div class="faq reveal">
-          <details open><summary>Which plan is right for my moving company?</summary><p>Placeholder answer — start with your main priority: search visibility, a better website, paid inquiries or reviews. We'll help you choose.</p></details>
-          <details><summary>Can I combine services into one plan?</summary><p>Placeholder answer — yes. Request a custom proposal combining services around your priorities and budget.</p></details>
-          <details><summary>Is advertising spend included?</summary><p>Placeholder answer — no. Ads pricing covers management; your ad budget is separate and agreed before launch.</p></details>
-          <details><summary>Do these plans guarantee booked moving jobs?</summary><p>Placeholder answer — no specific lead count is guaranteed; demand, competition and follow-up all affect results.</p></details>
-          <details><summary>What is included in monthly website pricing?</summary><p>Placeholder answer — each plan includes the listed services; your proposal confirms the final scope.</p></details>
+          <details open><summary>Which plan should I start with?</summary><p>Start where you're losing the most customers. Your free audit will point to the area with the quickest return.</p></details>
+          <details><summary>Can I bundle services?</summary><p>Yes. Bundles are priced as a custom plan, usually with a discount over buying services separately.</p></details>
+          <details><summary>Is ad spend included in Local Ads plans?</summary><p>No. Plan prices cover setup and management. Your ad budget is paid directly to the ad platform and agreed with you up front.</p></details>
+          <details><summary>Are results guaranteed?</summary><p>No one can honestly guarantee a number of booked jobs. We commit to clear reporting and continuous improvement.</p></details>
+          <details><summary>How do I cancel?</summary><p>Give 30 days' notice. Placeholder — confirm your actual terms.</p></details>
         </div>
       </div>
     </section>
@@ -60,48 +60,48 @@
   <script>
     document.addEventListener("mr:ready", () => {
       const { ic } = window.MR;
-      // [id, title, tagline, icon, plans[[name, tag, desc, price, cta, items]], disclaimer]
+      // [id, title, intro, icon, plans[[name, desc, price, cta, items]], note]
       const groups = [
-        ["p-search", "AI Optimization", "search", [
-          ["Starter", "Search foundations", "For local movers building their search foundation.", 499, "Build Your Visibility", ["AI Search Visibility Audit", "ChatGPT Optimization", "Google AI Overviews Optimization", "Gemini Optimization", "Voice Search Optimization", "Service Area Optimization", "Local Listing Management", "Review Monitoring", "Monthly Performance Reports"]],
-          ["Premium", "Wider AI coverage", "For growing movers competing in more service areas.", 999, "Grow Your Visibility", ["Everything in Starter", "Claude Optimization", "Microsoft Copilot Optimization", "AI Citation & Mention Tracking", "AI Brand Visibility Monitoring", "Competitor Analysis", "Knowledge Graph Optimization", "Digital PR Outreach"]],
-          ["Enterprise", "Built around your markets", "For established movers expanding across markets.", null, "Request a Quote", ["Everything in Premium", "Share of Voice Tracking", "Entity Relationship Mapping", "Multi-Market Visibility Strategy", "Location-Specific Content Planning", "Custom Performance Reporting"]]
-        ], "Placeholder disclaimer — search visibility and lead volume depend on competition, location and your website."],
-        ["p-web", "UI/UX Website Design", "monitor", [
-          ["Starter", "Your digital foundation", "For new moving businesses building their online foundation.", 499, "Start Your Website", ["Up to 5 Pages", "First-Month Support: 10 Hours", "3 Banner Updates", "Up to 20 Stock Images", "Mobile-Responsive Design", "Content Management System", "Google Analytics Integration", "Custom 404 Page"]],
-          ["Premium", "Room for your next stage", "For growing movers showcasing more services and locations.", 749, "Upgrade Your Website", ["5–10 Pages", "First-Month Support: 20 Hours", "5 Banner Updates", "Up to 30 Stock Images", "Mobile-Responsive Design", "Content Management System", "Website Search Functionality", "Initial GEO Optimization"]],
-          ["Enterprise", "More pages. More possibilities.", "For established movers needing a larger online presence.", 999, "Discuss Your Website", ["10+ Pages", "First-Month Support: 40 Hours", "10 Banner Updates", "50+ Stock Images", "Premium Fonts & Typography", "Website Security Features", "Ongoing Website Support", "Initial GEO Optimization"]]
-        ], "Placeholder disclaimer — page count, support allowance and subscription terms are confirmed in your proposal."],
-        ["p-ads", "AI Local Service Ads", "megaphone", [
-          ["Starter", "Start generating inquiries", "For local movers launching their first campaigns.", 250, "Launch Your Campaign", ["Campaign Setup & Management", "Service & Area Targeting", "Budget Monitoring", "Lead & Call Tracking Setup", "Business Profile Review", "24/7 Campaign Dashboard", "Monthly Performance Report"]],
-          ["Premium", "Optimize your next move", "For active moving companies growing their lead volume.", 500, "Grow Your Campaigns", ["Everything in Starter", "Expanded Area Targeting", "Ongoing Campaign Optimization", "Lead Quality Analysis", "Budget Allocation Adjustments", "Call Performance Review"]],
-          ["Enterprise", "Coordinate multiple markets", "For movers managing campaigns across multiple locations.", 750, "Plan Your Expansion", ["Everything in Premium", "Multi-Location Management", "Market-Level Analysis", "Budget Planning Across Areas", "Location-Level Lead Tracking", "Custom Reporting"]]
-        ], "Placeholder disclaimer — monthly prices cover management. Advertising spend is separate."],
-        ["p-reviews", "AI Review Management", "star", [
-          ["Starter", "Create a consistent review habit", "For moving teams building their reputation in one location.", 249, "Build Your Reputation", ["Review Management, One Location", "AI Review Request System", "SMS, Email & Call Invitations", "Follow-Up Reminders", "AI-Assisted Review Responses", "Reputation Monitoring", "Monthly Reporting"]],
-          ["Premium", "Turn feedback into progress", "For movers making reputation part of their growth strategy.", 850, "Strengthen Your Reputation", ["Everything in Starter", "Competitor Reputation Tracking", "Feedback Recovery Workflows", "Missed Call Text-Back", "Customer Feedback Surveys", "Review Showcase Widgets", "Dedicated Account Manager"]]
-        ], "Placeholder disclaimer — review invitations request honest feedback; platforms decide on ratings and removals."]
+        ["p-search", "Search Visibility", "Show up in maps, search results and AI assistants.", "search", [
+          ["Launch", "For a single-location mover getting found locally.", 450, "Start with Launch", ["Search & AI visibility audit", "Google Business Profile tune-up", "Core service-area pages", "Listing cleanup on key directories", "Monthly ranking report"]],
+          ["Grow", "For movers competing across several cities.", 900, "Choose Grow", ["Everything in Launch", "Optimization for AI assistants", "Content for each service area", "Competitor tracking", "Review & mention monitoring", "Bi-weekly check-ins"]],
+          ["Scale", "For multi-location and long-distance operators.", null, "Request a Quote", ["Everything in Grow", "Multi-location strategy", "Route-specific landing pages", "Digital PR outreach", "Custom reporting dashboard"]]
+        ], "Placeholder: rankings depend on competition, location and website quality."],
+        ["p-web", "Websites", "Fast, mobile-first sites built to collect quote requests.", "monitor", [
+          ["Launch", "A clean, quick site for a new or growing mover.", 400, "Start with Launch", ["Up to 5 pages", "Mobile-first design", "Instant quote form", "Hosting & security", "Basic analytics"]],
+          ["Grow", "More pages for more services and areas.", 700, "Choose Grow", ["Up to 12 pages", "Service-area page templates", "Online booking calendar", "Monthly content updates", "Conversion tracking"]],
+          ["Scale", "A full site for established, multi-location movers.", 950, "Choose Scale", ["Unlimited pages", "Location finder", "CRM integration", "Priority support", "Quarterly redesign sprints"]]
+        ], "Placeholder: page counts and support hours are confirmed in your proposal."],
+        ["p-ads", "Local Ads", "Google Local Services Ads managed for booked jobs.", "megaphone", [
+          ["Launch", "Get your first ad campaigns running the right way.", 300, "Start with Launch", ["Account setup & verification help", "Service & area targeting", "Call tracking", "Monthly report"]],
+          ["Grow", "Ongoing tuning to lower your cost per job.", 550, "Choose Grow", ["Everything in Launch", "Weekly bid & budget tuning", "Lead quality reviews", "Dispute handling for bad leads", "Call recording insights"]],
+          ["Scale", "Campaigns across multiple markets.", 800, "Choose Scale", ["Everything in Grow", "Multi-market management", "Seasonal budget planning", "Location-level reporting", "Dedicated ads specialist"]]
+        ], "Placeholder: plan prices cover management only. Ad spend is separate."],
+        ["p-reviews", "Reviews", "More genuine reviews, answered quickly.", "star", [
+          ["Launch", "A steady review habit for one location.", 250, "Start with Launch", ["Automatic review requests by text & email", "Smart reminders", "AI-drafted replies you approve", "Review alerts", "Monthly report"]],
+          ["Grow", "Reputation as a growth engine.", 650, "Choose Grow", ["Everything in Launch", "Multiple locations", "Website review widget", "Unhappy-customer recovery flow", "Missed-call text-back", "Competitor rating tracking"]]
+        ], "Placeholder: requests ask for honest feedback; platforms control ratings and removals."]
       ];
 
-      document.getElementById("price-panels").innerHTML = groups.map(([id, title, icon, plans, note]) => `
+      document.getElementById("price-panels").innerHTML = groups.map(([id, title, intro, icon, plans, note]) => `
         <section class="price-panel" id="${id}">
           <div class="section-head section-head--center reveal" style="margin-bottom:44px">
-            <h2 class="h2 grad-text">${title}</h2>
+            <h2 class="h2">${title}</h2>
+            <p class="lead">${intro}</p>
           </div>
           <div class="${plans.length === 2 ? "grid-2" : "grid-3"}">
-            ${plans.map(([name, tag, desc, price, cta, items], i) => {
+            ${plans.map(([name, desc, price, cta, items], i) => {
               const featured = i === 1;
               return `
               <div class="card price-card reveal${featured ? " is-featured" : ""}">
-                ${featured ? '<span class="ribbon">RECOMMENDED PLAN</span>' : ""}
-                <div class="plan-top"><span class="icon-badge">${ic(icon)}</span><small>${tag}</small></div>
-                <h3 class="plan-name">${name}</h3>
+                ${featured ? '<span class="ribbon">MOST CHOSEN</span>' : ""}
+                <div class="plan-top"><span class="icon-badge">${ic(icon)}</span><h3 class="plan-name">${name}</h3></div>
                 <p class="plan-desc">${desc}</p>
                 ${price
-                  ? `<div class="price"><sup>$</sup><strong>${price}</strong><span>/month</span></div><p class="price-meta">Monthly service plan · USD</p>`
-                  : `<div class="price"><strong style="font-size:36px">Let's talk</strong></div><p class="price-meta">A plan tailored to your business</p>`}
-                <a class="btn ${featured ? "btn--primary" : "btn--ghost"}" href="contact.html">${cta} <span class="btn-arrow">${ic("arrow-ur")}</span></a>
-                <div class="included"><span>WHAT'S INCLUDED</span><ul class="check-list">${items.map((x) => `<li>${x}</li>`).join("")}</ul></div>
+                  ? `<div class="price"><strong>$${price}</strong><span>/ month</span></div><p class="price-meta">Billed monthly · USD</p>`
+                  : `<div class="price"><strong style="font-size:34px">Custom</strong></div><p class="price-meta">Priced to your markets</p>`}
+                <a class="btn ${featured ? "btn--primary" : "btn--ghost"}" href="contact.html">${cta}</a>
+                <div class="included"><span>INCLUDES</span><ul class="check-list">${items.map((x) => `<li>${x}</li>`).join("")}</ul></div>
               </div>`;
             }).join("")}
           </div>

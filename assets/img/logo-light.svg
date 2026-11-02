@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70" role="img" aria-label="Movers Rankers">
+  <!-- Light variant for dark backgrounds -->
+  <path d="M30 66s-24-18-24-38a24 24 0 0 1 48 0c0 20-24 38-24 38z" fill="#f25c1f"/>
+  <path d="M19 35l8-8 6 5 9-10M35 22h7v7" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="66" y="34" fill="#ffffff" font-family="Space Grotesk, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="-0.5">Movers</text>
+  <text x="66" y="60" fill="#ffffff" font-family="Space Grotesk, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="-0.5">Rankers<tspan fill="#ffb020">.</tspan></text>
+</svg>

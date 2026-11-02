@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Solutions — Movers Rankers</title>
-  <meta name="description" content="Placeholder: business solutions for moving companies.">
+  <meta name="description" content="Office automation tools for moving companies.">
   <link rel="icon" href="assets/img/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
 </head>
@@ -16,39 +16,35 @@
   <div data-header></div>
 
   <main>
-    <section class="banner">
+    <section class="banner section--grid">
       <div class="container">
-        <span class="eyebrow">Bring your business together</span>
-        <h1 class="h1 grad-text">Less chasing. More moving forward.</h1>
         <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>Solutions</span></nav>
+        <span class="eyebrow">Solutions</span>
+        <h1 class="h1" style="max-width:880px">Run a tighter office <span class="hl">without adding staff.</span></h1>
+        <p class="lead">Simple tools that connect your calls, quotes, jobs and crews — so nothing slips between the first ring and the final invoice.</p>
       </div>
     </section>
 
-    <section class="section section--glow">
+    <section class="section">
       <div class="container">
-        <div class="section-head section-head--center reveal">
-          <span class="eyebrow">Built around your workflow</span>
-          <h2 class="h2 grad-text">One clearer process, from first call to final box.</h2>
-          <p class="lead">Placeholder copy — tools that keep leads, jobs, crews and revenue in one place.</p>
-        </div>
         <div class="grid-3" id="solution-cards"></div>
       </div>
     </section>
 
-    <section class="section section--panel">
+    <section class="section section--dark">
       <div class="container split">
-        <div class="media reveal" style="aspect-ratio:4/3"><img src="https://picsum.photos/seed/mr-workflow/900/675" alt="Placeholder workflow image" loading="lazy"></div>
         <div class="stack reveal">
-          <span class="eyebrow">Why it matters</span>
-          <h2 class="h2 grad-text">Every call, quote and crew — connected</h2>
-          <p class="lead">Placeholder copy — when your systems talk to each other, nothing slips through the cracks and your team spends more time moving.</p>
-          <ul class="check-list">
-            <li>Placeholder benefit — fewer missed opportunities</li>
-            <li>Placeholder benefit — faster quotes and invoices</li>
-            <li>Placeholder benefit — real-time view of revenue</li>
+          <span class="eyebrow">Connected by default</span>
+          <h2 class="h2">Every tool shares the same customer record</h2>
+          <p class="lead">A missed call becomes a lead, the lead becomes a quote, the quote becomes a scheduled job, and the job shows up on your revenue dashboard — automatically.</p>
+          <ul class="check-list" style="color:#dbe2ee">
+            <li>No double entry between systems</li>
+            <li>Everyone sees the same, up-to-date job details</li>
+            <li>Works alongside the tools you already use</li>
           </ul>
-          <a class="btn btn--primary" href="contact.html">Let's plan your setup <span class="btn-arrow"><svg class="ic"><use href="#i-arrow-ur"/></svg></span></a>
+          <a class="btn btn--primary" href="contact.html">See a Walkthrough <svg class="ic"><use href="#i-arrow"/></svg></a>
         </div>
+        <div class="media reveal" style="aspect-ratio:4/3"><img src="https://picsum.photos/seed/mrx-dashboard-office/900/675" alt="Placeholder: office dashboard" loading="lazy"></div>
       </div>
     </section>
 
@@ -63,9 +59,9 @@
       document.getElementById("solution-cards").innerHTML = SOLUTIONS.map((s) => `
         <a class="card service-card reveal" href="solution-detail.html?s=${s.slug}">
           <span class="icon-badge">${ic(s.icon)}</span>
-          <h4 class="h3">${s.name}</h4>
-          <p>${s.short} Placeholder supporting sentence about how it helps a moving business.</p>
-          <span class="card-foot"><span class="link-arrow">Learn More</span><span class="circle-link">${ic("arrow-ur")}</span></span>
+          <h2 class="h3">${s.name}</h2>
+          <p>${s.short}</p>
+          <span class="link-arrow">Learn more ${ic("arrow")}</span>
         </a>`).join("");
     });
   </script>

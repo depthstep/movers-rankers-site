@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Become an Affiliate — Movers Rankers</title>
-  <meta name="description" content="Placeholder: affiliate program.">
+  <title>Referral Program — Movers Rankers</title>
+  <meta name="description" content="Earn rewards for introducing moving companies to Movers Rankers.">
   <link rel="icon" href="assets/img/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
 </head>
@@ -16,34 +16,31 @@
   <div data-header></div>
 
   <main>
-    <section class="banner">
-      <div class="container">
-        <h1 class="h1 grad-text">Become an Affiliate</h1>
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>Affiliate</span></nav>
-      </div>
-    </section>
-
-    <section class="section section--panel">
+    <section class="section section--grid">
       <div class="container split" style="align-items:start">
         <div class="stack reveal">
-          <span class="eyebrow">Partner program</span>
-          <h2 class="h2 grad-text">Refer movers. Earn rewards.</h2>
-          <p class="lead">Placeholder copy — know a moving company that needs more bookings? Introduce them and earn a commission when they join.</p>
-          <div class="feature-stack" style="width:100%">
-            <div class="card feature"><span class="icon-badge"><svg class="ic"><use href="#i-handshake"/></svg></span><div><h4>1. Apply</h4><p>Placeholder step description.</p></div></div>
-            <div class="card feature"><span class="icon-badge"><svg class="ic"><use href="#i-users"/></svg></span><div><h4>2. Refer</h4><p>Placeholder step description.</p></div></div>
-            <div class="card feature"><span class="icon-badge"><svg class="ic"><use href="#i-trend"/></svg></span><div><h4>3. Earn</h4><p>Placeholder step description.</p></div></div>
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>Referral Program</span></nav>
+          <span class="eyebrow">Referral program</span>
+          <h1 class="h1" style="font-size:clamp(36px,4.6vw,56px)">Know a mover who needs more jobs? <span class="hl">Get rewarded.</span></h1>
+          <p class="lead">Industry suppliers, consultants and fellow movers can earn a reward for every moving company they introduce that becomes a client.</p>
+          <div class="feature-list" style="width:100%">
+            <div class="feature"><span class="step-num">1</span><div><h4>Apply</h4><p>Fill in the short form. We'll confirm within a few days.</p></div></div>
+            <div class="feature"><span class="step-num">2</span><div><h4>Introduce</h4><p>Share your link or make a direct introduction.</p></div></div>
+            <div class="feature"><span class="step-num">3</span><div><h4>Earn</h4><p>Get paid when your referral signs up. Placeholder — add your terms.</p></div></div>
           </div>
         </div>
         <form class="form reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Application received!'; this.reset();">
-          <h3 class="h3">Apply to the program</h3>
+          <h2 class="h3">Join the program</h2>
           <div class="form-row">
-            <div class="field"><label for="a-name">Full name</label><input id="a-name" required placeholder="John Doe"></div>
-            <div class="field"><label for="a-email">Email</label><input id="a-email" type="email" required placeholder="you@example.com"></div>
+            <div class="field"><label for="a-name">Your name</label><input id="a-name" required autocomplete="name"></div>
+            <div class="field"><label for="a-email">Email</label><input id="a-email" type="email" required autocomplete="email"></div>
           </div>
-          <div class="field"><label for="a-site">Website or social profile</label><input id="a-site" placeholder="https://"></div>
-          <div class="field"><label for="a-msg">How will you refer movers?</label><textarea id="a-msg" placeholder="Placeholder"></textarea></div>
-          <button class="btn btn--primary" type="submit" style="justify-self:start;border:0">Submit Application <span class="btn-arrow"><svg class="ic"><use href="#i-arrow-ur"/></svg></span></button>
+          <div class="field">
+            <label for="a-type">I am a…</label>
+            <select id="a-type"><option>Moving company owner</option><option>Industry supplier</option><option>Consultant / agency</option><option>Other</option></select>
+          </div>
+          <div class="field"><label for="a-msg">How do you plan to refer movers?</label><textarea id="a-msg"></textarea></div>
+          <button class="btn btn--primary" type="submit" style="border:0">Submit Application <svg class="ic"><use href="#i-arrow"/></svg></button>
         </form>
       </div>
     </section>
